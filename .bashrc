@@ -12,10 +12,9 @@ scanuser() {
 	else
 		DIR='/home/'$1
 		LOG='/root/logs/clamav/clamscan-'$(date +%F.%H:%M:%S)'-'$1'.log'
-		SUBJECT='"WHM '$(hostname -a)': clamav scan for user '$1'"'
 		EMAIL='radams@ntsi.com'
 		clamscan -r -i $DIR -l $LOG
-		cat $LOG | mail -s "WHM $(hostname -a): clamav scan results for $1" -r $EMAIL $EMAIL
+		cat $LOG | mail -s "WHM $(hostname -s): clamav scan results for $1" -r $EMAIL $EMAIL
 	fi
 }
 

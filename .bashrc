@@ -4,6 +4,7 @@
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+alias apachelog='sudo tail -f /var/log/apache2/error.log'
 
 # Alias for launching multitail with relevant log files
 alias logmon='multitail /var/log/messages /var/log/secure /var/log/exim_mainlog /var/log/maillog'

@@ -59,6 +59,6 @@ export PS1="\[$White\]__\[$Green\][\[$BGreen\]\h:\[$Cyan\]\u\[$Green\]]\[$White\
 export PS2="| => "
 
 # Preferred implementations
-alias ll='ls -FGlAhp'
+alias ll='ls -FlAhp'
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
 
